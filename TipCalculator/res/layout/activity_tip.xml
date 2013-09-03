@@ -28,8 +28,9 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/btnTwenty"
         android:layout_centerHorizontal="true"
-        android:text="15%" 
-        android:onClick="setFifteenPercentTip" />
+        android:text="15%"
+        android:tag=".15"
+        android:onClick="getTip" />
 
     <Button
         android:id="@+id/btnTwenty"
@@ -39,8 +40,9 @@
         android:layout_alignBaseline="@+id/btnTen"
         android:layout_alignBottom="@+id/btnTen"
         android:layout_toRightOf="@+id/btnFifteen"
-        android:text="20%" 
-        android:onClick="setTwentyPercentTip" />
+        android:text="20%"
+        android:tag=".20" 
+        android:onClick="getTip" />
 
     <Button
         android:id="@+id/btnTen"
@@ -50,7 +52,8 @@
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/btnFifteen"
         android:text="10%" 
-        android:onClick="setTenPercentTip"/>
+        android:tag=".10"
+        android:onClick="getTip"/>
 
     <TextView
         android:id="@+id/tvTipIs"

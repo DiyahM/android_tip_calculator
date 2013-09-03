@@ -23,16 +23,9 @@ public class TipActivity extends Activity {
 		return true;
 	}
 	
-	public void setTenPercentTip(View v) {
-		setTipField(.1);	
-	}
-	
-	public void setFifteenPercentTip(View v) {
-		setTipField(.15);
-	}
-	
-	public void setTwentyPercentTip(View v) {
-		setTipField(.2);
+	public void getTip(View v) {
+		Double percentage = Double.parseDouble(v.getTag().toString());
+		setTipField(percentage);
 	}
 	
 	private void setTipField(Double percentage) {
